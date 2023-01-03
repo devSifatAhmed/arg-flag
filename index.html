@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argentina Flag By Sifat Ahmed</title>
+    <link rel="shortcut icon" href="messi-favicon.png" type="image/x-icon">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flag{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .steps{
+            position: relative;
+            width: 100%;
+            height: calc(100% / 3);
+        }
+        .steps:nth-child(odd){
+            background: var(--sky);
+        }
+        .steps:nth-child(even){
+            background: var(--white);
+        }
+        .sun{
+            width: calc((100vh / 3) - 50px);
+            height: calc((100vh / 3) - 50px);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 100%;
+            overflow: hidden;
+            z-index: 5;
+        }
+        .sun-circle{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 13vh;
+            height: 13vh;
+            border-radius: 100%;
+            border: 0.5px solid var(--sun-border);
+            background: url(./messi-vector.svg), var(--sun);
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .sun-shines{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(var(--shine-rotation));
+            width: 100%;
+            height: 7px;
+            background: var(--sun);
+            border-radius: 50%;
+            border: 0.5px solid var(--sun-border);
+            z-index: -1;
+        }
+        .sun-shines:nth-child(odd){
+            animation: shining1 8s ease-in-out infinite;
+            animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+        .sun-shines:nth-child(even){
+            animation: shining2 7s ease-in-out infinite;
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        @keyframes shining1{
+            50%{
+                transform: translate(-50%, -50%) rotate(var(--shine-rotation)) scale(0.5);
+            }
+        }
+        @keyframes shining2{
+            50%{
+                transform: translate(-50%, -50%) rotate(var(--shine-rotation)) scale(0.5);
+            }
+        }
+        .sun-shines::after{
+            position: absolute;
+            content: "";
+            width: 70%;
+            height: 1px;
+            border-radius: 100%;
+            background: var(--sun-border);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        :root{
+            --sky: #6BADE4;
+            --white: #fff;
+            --sun: #FCB81B;
+            --sun-border: #9B5400;
+        }
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <div class="steps"></div>
+        <div class="steps">
+            <div class="sun">
+                <div class="sun-circle"></div>
+                <div class="sun-shines" style="--shine-rotation: 5deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 10deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 15deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 20deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 25deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 30deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 35deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 40deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 45deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 50deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 55deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 60deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 65deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 70deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 75deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 80deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 85deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 90deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 95deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 100deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 105deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 110deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 115deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 120deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 125deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 130deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 135deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 140deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 145deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 150deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 155deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 160deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 165deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 170deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 175deg;"></div>
+                <div class="sun-shines" style="--shine-rotation: 180deg;"></div>
+            </div>
+        </div>
+        <div class="steps"></div>
+    </div>
+</body>
+</html>
